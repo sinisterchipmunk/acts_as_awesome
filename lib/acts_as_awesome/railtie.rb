@@ -5,7 +5,7 @@ p "Railtie loaded"
 
 begin
 module ActsAsAwesome
-  class Railtie < Railtie
+  class Railtie < Rails::Railtie
     config.to_prepare do
       p "hook added"
       ApplicationController.send(:extend, ActsAsAwesome::Hook)
