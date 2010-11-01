@@ -1,10 +1,18 @@
 require 'rails'
 require 'acts_as_awesome'
 
-class ActsAsAwesome::Railtie < Railtie
-  config.to_prepare do
-    p "hook added"
-    ApplicationController.send(:extend, ActsAsAwesome::Hook)
+p "Railtie loaded"
+
+begin
+module ActsAsAwesome
+  class Railtie < Railtie
+    config.to_prepare do
+      p "hook added"
+      ApplicationController.send(:extend, ActsAsAwesome::Hook)
+    end
   end
 end
-
+rescue
+p $!, $!.message
+raise $!
+end

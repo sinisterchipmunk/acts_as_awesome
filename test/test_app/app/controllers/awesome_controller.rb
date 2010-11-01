@@ -1,5 +1,5 @@
 class AwesomeController < ApplicationController
-#  acts_as_awesome
+  acts_as_awesome
 
 
   def index
