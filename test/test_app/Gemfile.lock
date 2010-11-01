@@ -1,6 +1,6 @@
 GIT
   remote: /Users/colin/projects/rails/acts_as_awesome
-  revision: 120f1c78722afe250b6dc5d17339fe249fdfb97f
+  revision: cb8b964d64b7ce9334f58e4ecc33b40c1360f383
   specs:
     acts_as_awesome (0.0.0)
 
