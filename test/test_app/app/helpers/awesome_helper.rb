@@ -1,0 +1,2 @@
+module AwesomeHelper
+end
